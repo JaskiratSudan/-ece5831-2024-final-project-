@@ -5,38 +5,31 @@
 ## Table of Contents
 
 1. [Motivation](#motivation)  
-2. [Project Objectives](#project-objectives)  
-3. [Significance](#significance)  
-4. [Key Features](#key-features)  
-5. [Dataset](#dataset)  
-6. [Speech-to-Text Conversion](#speech-to-text-conversion)  
-7. [Personalized Image Generation](#personalized-image-generation)  
-8. [Model Architectures](#model-architectures)  
+2. [Project Objectives](#project-objectives)   
+3. [Key Features](#key-features)  
+4. [Dataset](#dataset)  
+5. [Speech-to-Text Conversion](#speech-to-text-conversion)  
+6. [Personalized Image Generation](#personalized-image-generation)  
+7. [Model Specifications](#model_specifications)  
     - [Stable Diffusion Architecture](#stable-diffusion-architecture)  
     - [Fine-Tuning with DreamBooth](#fine-tuning-with-dreambooth)  
-9. [Training Strategy](#training-strategy)  
-10. [Performance Metrics](#performance-metrics)  
-11. [Technologies Used](#technologies-used)  
-12. [Contributors](#contributors)  
-13. [Future Work](#future-work)  
-14. [Project Attachments](#project-attachments)  
+8. [Training Strategy](#training-strategy)  
+9. [Technologies Used](#technologies-used)  
+10. [Contributors](#contributors)  
+11. [Future Work](#future-work)  
+12. [How to Run](#how-to-run)
+13. [Project Attachments](#project-attachments)  
 
 ---
 
 ## Motivation  
-With the growing demand for personalized content, this project bridges audio and visual modalities by generating images from speech. It has real-world applications in accessibility, content creation, and immersive environments like AR/VR. This innovation benefits visually impaired individuals and enhances creative workflows.
-
+With the growing demand for personalized content, this project bridges audio and visual modalities by generating images from speech. It has real-world applications in accessibility, content creation, and immersive environments like AR/VR. 
 ---
 
 ## Project Objectives  
 - Develop a system that generates high-quality personalized images from speech inputs.  
 - Seamlessly combine speech-to-text conversion and fine-tuned image generation models.  
 - Optimize training efficiency and ensure high output quality.
-
----
-
-## Significance  
-The project advances multimodal AI by integrating speech recognition and image generation. It demonstrates how personalized models can enhance accessibility, creativity, and automation. This approach sets the groundwork for AI-driven tools in multiple industries.
 
 ---
 
@@ -62,13 +55,13 @@ Using Stable Diffusion v2, we fine-tuned the model with DreamBooth to generate p
 
 ---
 
-## Model Architectures  
+## Model Specifications  
 
 ### Stable Diffusion Architecture  
 Stable Diffusion uses a latent diffusion process to generate images from text prompts. Its components include:  
-- **U-Net**: Core neural network for noise prediction and removal.  
-- **Variational Autoencoder (VAE)**: Compresses images into latent space.  
-- **CLIP Text Encoder**: Translates text prompts into numeric representations.
+- *U-Net*: Core neural network for noise prediction and removal.  
+- *Variational Autoencoder (VAE)*: Compresses images into latent space.  
+- *CLIP Text Encoder*: Translates text prompts into numeric representations.
 
 ### Fine-Tuning with DreamBooth  
 DreamBooth enables efficient fine-tuning for personalized image generation. Key training parameters include prior preservation, batch size control, and memory-efficient optimizations like mixed precision.
@@ -80,23 +73,18 @@ The model was fine-tuned with optimized configurations such as a low learning ra
 
 ---
 
-## Performance Metrics  
-The performance was evaluated using metrics like relevance, visual fidelity, and quality of the generated images. Sample prompts were tested to validate the model’s ability to produce personalized results.
-
----
-
 ## Technologies Used  
-- **Speech-to-Text**: OpenAI Whisper  
-- **Image Generation**: Stable Diffusion v2  
-- **Fine-Tuning Framework**: DreamBooth  
-- **Optimizations**: Mixed precision training and memory-efficient optimizers
+- *Speech-to-Text*: OpenAI Whisper  
+- *Image Generation*: Stable Diffusion v2  
+- *Fine-Tuning Framework*: DreamBooth  
+- *Optimizations*: Mixed precision training and memory-efficient optimizers
 
 ---
 
 ## Contributors  
-- **Adil Qureshi**: Fine-tuning Stable Diffusion and model evaluation  
-- **Shubham Jagtap**: Speech-to-text integration and testing
-- **Jaskirat Sudan**: Dataset creation and image generation analysis  
+- *Adil Qureshi*: Fine-tuning Stable Diffusion and model training
+- *Shubham Jagtap*: Speech-to-text integration and testing
+- *Jaskirat Sudan*: Dataset creation and image generation analysis  
 
 ---
 
@@ -107,13 +95,25 @@ The performance was evaluated using metrics like relevance, visual fidelity, and
 
 ---
 
+## How to Run  
+To run the `final_project.ipynb` file for inference in Google Colab:
+
+1. **Mount Google Drive**:  
+   Open the notebook and run the Drive mounting cell.  
+   ```python
+   from google.colab import drive
+   drive.mount('/content/drive')
+   ```
+2. **Specify the Model Path**:
+    Provide the path to the "Model Files" folder inside your ece5831-2024-final-project directory.
+    You can create a shortcut to the shared (ece5831-2024-final-project) folder in your own Google Drive for easier access.
+
+3. **Run All cells of `final_project.ipynb`**
+    Ensure the Colab session is connected to a free GPU runtime.
+    Check runtime type under Runtime > Change runtime type and select GPU.
 ## Project Attachments  
-•⁠  ⁠Presentation Link: https://youtu.be/4edAK2OjUu4
-
-•⁠  ⁠Project Demo Link: https://youtu.be/gDksvHqDzNs
-
-•⁠  ⁠Dataset Link: https://drive.google.com/drive/folders/1DiNI8N2tjSfx6K9MFgu5IdIZVHb2Bi3Y?usp=sharing
-
-•⁠  ⁠Project Documents Link: https://drive.google.com/drive/folders/1MUaLMb42silAoXdXlj5suvDwAEghulr5
-
+1.⁠  ⁠*Presentation Link*: https://youtu.be/4edAK2OjUu4 \
+2.⁠  ⁠*Project Demo Link*: https://youtu.be/gDksvHqDzNs \
+3.⁠  ⁠*Dataset Link*: https://drive.google.com/drive/folders/1DiNI8N2tjSfx6K9MFgu5IdIZVHb2Bi3Y?usp=sharing \
+4.⁠  ⁠*Project Documents Link*: https://drive.google.com/drive/folders/1MUaLMb42silAoXdXlj5suvDwAEghulr5 
 ---
