@@ -83,8 +83,8 @@ The model was fine-tuned with optimized configurations such as a low learning ra
 
 ## Contributors  
 - *Adil Qureshi*: Fine-tuning Stable Diffusion and model training
-- *Shubham Jagtap*: Speech-to-text integration and testing
-- *Jaskirat Sudan*: Dataset creation and image generation analysis  
+- *Jaskirat Sudan*: Speech-to-text integration, testing and image generation analysis.
+- *Shubham Jagtap*: Dataset creation.
 
 ---
 
