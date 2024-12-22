@@ -43,6 +43,7 @@ With the growing demand for personalized content, this project bridges audio and
 
 ## Dataset  
 We created a custom dataset by capturing our own images to fine-tune the Stable Diffusion model. This small, targeted dataset ensures the generated images are highly personalized and contextually accurate.
+![BeFunky-collage](https://github.com/user-attachments/assets/71d7cff2-437c-443b-a8c8-926fdd5a2bda)
 
 ---
 
