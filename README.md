@@ -14,11 +14,12 @@
     - [Stable Diffusion Architecture](#stable-diffusion-architecture)  
     - [Fine-Tuning with DreamBooth](#fine-tuning-with-dreambooth)  
 8. [Training Strategy](#training-strategy)  
-9. [Technologies Used](#technologies-used)  
-10. [Contributors](#contributors)  
-11. [Future Work](#future-work)  
-12. [How to Run](#how-to-run)
-13. [Project Attachments](#project-attachments)  
+9. [Technologies Used](#technologies-used)
+10. [Results](#Results)
+11. [Contributors](#contributors)  
+12. [Future Work](#future-work)  
+13. [How to Run](#how-to-run)
+14. [Project Attachments](#project-attachments)  
 
 ---
 
